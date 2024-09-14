@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="styles.css"> <!-- ربط ملف CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Branch Management</h1>
+        <!-- حقل البحث -->
+        <input type="text" id="search" placeholder="Search by Branch ID or Branch Name">
+
+        <!-- زر لفتح نموذج الإضافة -->
+        <button onclick="openForm()">Add Branch</button>
+        
+        <!-- نموذج الإدخال، مخفي بشكل افتراضي -->
+        <div id="formContainer" class="form-container hidden">
+            <form id="branchForm">
+                <label for="branchID">Branch ID:</label>
+                <input type="text" id="branchID" required>
+                
+                <label for="branchName">Branch Name:</label>
+                <input type="text" id="branchName" required>
+                
+                <label for="city">City:</label>
+                <input type="text" id="city" required>
+                
+                <label for="paymentLink">Payment Link:</label>
+                <input type="text" id="paymentLink" required>
+                
+                <label for="merchandizer">Merchandizer:</label>
+                <input type="text" id="merchandizer" required>
+                
+                <!-- أزرار لحفظ وإلغاء النموذج -->
+                <button type="button" onclick="saveBranch()">Save</button>
+                <button type="button" onclick="closeForm()">Cancel</button>
+            </form>
+        </div>
+        
+        <!-- جدول عرض البيانات -->
+        <table id="branchTable">
+            <thead>
+                <tr>
+                    <th>Branch ID</th>
+                    <th>Branch Name</th>
+                    <th>City</th>
+                    <th>Payment Link</th>
+                    <th>Merchandizer</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- البيانات ستضاف هنا باستخدام JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ربط ملف JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif; /* تعيين نوع الخط */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    padding: 0; /* إزالة الحشو الافتراضي */
+    display: flex;
+    justify-content: center; /* توسيط المحتوى أفقياً */
+    align-items: center; /* توسيط المحتوى عمودياً */
+    height: 100vh; /* تعيين ارتفاع الشاشة الكامل */
+    background-color: #f4f4f4; /* تعيين لون خلفية خفيف */
+}
+
+.container {
+    width: 80%; /* تعيين عرض الحاوية */
+    max-width: 1200px; /* تعيين أقصى عرض للحاوية */
+    background-color: #fff; /* تعيين لون خلفية أبيض */
+    padding: 20px; /* إضافة حشو حول المحتوى */
+    border-radius: 8px; /* تعيين زوايا دائرية للحاوية */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* إضافة ظل للحاوية */
+}
+
+h1 {
+    text-align: center; /* توسيط النص */
+}
+
+input[type="text"] {
+    width: calc(100% - 22px); /* تعيين عرض الحقل مع أخذ الحشو بعين الاعتبار */
+    padding: 10px; /* إضافة حشو داخل الحقل */
+    margin: 5px 0; /* تعيين هامش أعلى وأسفل الحقل */
+    border: 1px solid #ddd; /* تعيين لون وسمك الحدود */
+    border-radius: 4px; /* تعيين زوايا دائرية للحدود */
+}
+
+button {
+    padding: 10px 15px; /* إضافة حشو داخل الأزرار */
+    margin: 5px; /* تعيين هامش حول الأزرار */
+    border: none; /* إزالة الحدود الافتراضية */
+    border-radius: 4px; /* تعيين زوايا دائرية للأزرار */
+    color: #fff; /* تعيين لون النص داخل الأزرار */
+    background-color: #007bff; /* تعيين لون خلفية للأزرار */
+    cursor: pointer; /* تغيير شكل المؤشر عند المرور فوق الأزرار */
+}
+
+button:hover {
+    background-color: #0056b3; /* تغيير لون الخلفية عند المرور فوق الأزرار */
+}
+
+table {
+    width: 100%; /* تعيين عرض الجدول ليشغل العرض الكامل للحاوية */
+    border-collapse: collapse; /* إزالة المسافات بين خلايا الجدول */
+    margin-top: 20px; /* إضافة هامش أعلى للجدول */
+}
+
+th, td {
+    border: 1px solid #ddd; /* تعيين لون وسمك الحدود للخلايا */
+    padding: 10px; /* إضافة حشو داخل الخلايا */
+    text-align: left; /* تعيين محاذاة النص إلى اليسار */
+    
+}
+
+th {
+    background-color: #f4f4f4; /* تعيين لون خلفية لرؤوس الأعمدة */
+}
+
+.hidden {
+    display: none; /* إخفاء العناصر ذات الصنف hidden */
+}
+
+.form-container {
+    margin-bottom: 20px; /* إضافة هامش أسفل النموذج */
+}
