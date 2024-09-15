@@ -3,10 +3,10 @@ const mysql = require("mysql");
 
 // تعريف الاتصال بقاعدة البيانات على Heroku
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "kartngo_db",
+  host: "irkm0xtlo2pcmvvz.chr7pe7iynqr.eu-west-1.rds.amazonaws.com",
+  user: "npwh7vgjgwa5j8sm",
+  password: "w0jnuqz7tfi0efbf",
+  database: "cc2hx5io3kypbrfj",
   port: 3306
 });
 
